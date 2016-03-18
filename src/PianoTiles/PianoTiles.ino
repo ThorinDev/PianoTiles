@@ -11,10 +11,10 @@ const int relayC = 6;
 const int relayD = 7;
 
 // Light Sensors
-const int sensorA;
-const int sensorB;
-const int sensorC;
-const int sensorD;
+const int sensorA = A5;
+const int sensorB = A4;
+const int sensorC = A3;
+const int sensorD = A2;
 
 int delay1 = 80;
 int delay2 = 75;
