@@ -4,10 +4,17 @@
   Rewritten by Chris Nethercott / ThorinDev
 */
 
+// Relays
 const int relayA = 4;
 const int relayB = 5;
 const int relayC = 6;
 const int relayD = 7;
+
+// Light Sensors
+const int sensorA;
+const int sensorB;
+const int sensorC;
+const int sensorD;
 
 int delay1 = 80;
 int delay2 = 75;
