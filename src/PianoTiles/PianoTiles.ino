@@ -1,3 +1,9 @@
+/*
+  Piano Tiles
+  Original Code: https://goo.gl/rhbfPM
+  Rewritten by Chris Nethercott / ThorinDev
+*/
+
 void setup()
 {
   pinMode(4,OUTPUT);
