@@ -21,15 +21,15 @@ int delay2 = 75;
 int count = 0;
 
 void setup() {
-  pinMode(relayA,OUTPUT);
-  pinMode(relayB,OUTPUT);
-  pinMode(relayC,OUTPUT);
-  pinMode(relayD,OUTPUT);
+  pinMode(relayA, OUTPUT);
+  pinMode(relayB, OUTPUT);
+  pinMode(relayC, OUTPUT);
+  pinMode(relayD, OUTPUT);
    
-  digitalWrite(relayA,LOW);
-  digitalWrite(relayB,LOW); 
-  digitalWrite(relayC,LOW); 
-  digitalWrite(relayD,LOW);
+  digitalWrite(relayA, LOW);
+  digitalWrite(relayB, LOW); 
+  digitalWrite(relayC, LOW); 
+  digitalWrite(relayD, LOW);
 }
 
 void loop() {
