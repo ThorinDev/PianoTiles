@@ -9,8 +9,7 @@ const int relayB = 5;
 const int relayC = 6;
 const int relayD = 7;
 
-void setup()
-{
+void setup() {
   pinMode(relayA,OUTPUT);
   digitalWrite(relayA,LOW); 
   pinMode(relayB,OUTPUT);
@@ -26,8 +25,7 @@ int delay1 = 80;
 int delay2 = 75;
 
 int count =0;
-void loop()
-{
+void loop() {
   count = count +1;
   if(count==25)
   {
