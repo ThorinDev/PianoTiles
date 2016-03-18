@@ -11,14 +11,14 @@ const int relayD = 7;
 
 void setup() {
   pinMode(relayA,OUTPUT);
-  digitalWrite(relayA,LOW); 
   pinMode(relayB,OUTPUT);
-  digitalWrite(relayB,LOW); 
   pinMode(relayC,OUTPUT);
-  digitalWrite(relayC,LOW); 
   pinMode(relayD,OUTPUT);
-  digitalWrite(relayD,LOW); 
-  
+   
+  digitalWrite(relayA,LOW);
+  digitalWrite(relayB,LOW); 
+  digitalWrite(relayC,LOW); 
+  digitalWrite(relayD,LOW);
 }
 
 int delay1 = 80;
