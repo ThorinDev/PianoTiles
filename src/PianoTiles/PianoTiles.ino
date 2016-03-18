@@ -4,6 +4,11 @@
   Rewritten by Chris Nethercott / ThorinDev
 */
 
+const int relayA;
+const int relayB;
+const int relayC;
+const int relayD;
+
 void setup()
 {
   pinMode(4,OUTPUT);
