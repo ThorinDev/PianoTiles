@@ -4,10 +4,10 @@
   Rewritten by Chris Nethercott / ThorinDev
 */
 
-const int relayA;
-const int relayB;
-const int relayC;
-const int relayD;
+const int relayA = 4;
+const int relayB = 5;
+const int relayC = 6;
+const int relayD = 7;
 
 void setup()
 {
