@@ -11,14 +11,14 @@ const int relayD = 7;
 
 void setup()
 {
-  pinMode(4,OUTPUT);
-  digitalWrite(4,LOW); 
-  pinMode(5,OUTPUT);
-  digitalWrite(5,LOW); 
-  pinMode(6,OUTPUT);
-  digitalWrite(6,LOW); 
-  pinMode(7,OUTPUT);
-  digitalWrite(7,LOW); 
+  pinMode(relayA,OUTPUT);
+  digitalWrite(relayA,LOW); 
+  pinMode(relayB,OUTPUT);
+  digitalWrite(relayB,LOW); 
+  pinMode(relayC,OUTPUT);
+  digitalWrite(relayC,LOW); 
+  pinMode(relayD,OUTPUT);
+  digitalWrite(relayD,LOW); 
   
 }
 
@@ -37,9 +37,9 @@ void loop()
  
   if(analogRead(A5)<700) // in black
   {
-    digitalWrite(4, HIGH);
+    digitalWrite(relayA, HIGH);
     delay(delay2);
-    digitalWrite(4, LOW);
+    digitalWrite(relayA, LOW);
     delay(delay1);
     
   }
