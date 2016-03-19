@@ -56,7 +56,7 @@ void loop() {
     delay2 = 75;
   }
  
-  if(sensorAState < 700) // in black {
+  if(sensorAState < 700) {
     digitalWrite(relayA, HIGH);
     delay(delay2);
     digitalWrite(relayA, LOW);
