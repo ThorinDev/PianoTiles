@@ -52,7 +52,7 @@ void loop() {
     delay2 = 75;
   }
  
-  if(analogRead(A5)<700) // in black
+  if(sensorAState < 700) // in black
   {
     digitalWrite(relayA, HIGH);
     delay(delay2);
@@ -60,21 +60,21 @@ void loop() {
     delay(delay1);
     
   }
-  else if(analogRead(A4)<700)
+  else if(sensorBState < 700)
   {
     digitalWrite(5, HIGH);
     delay(delay2);
     digitalWrite(5, LOW);
     delay(delay1);
   }
-  else if(analogRead(A3)<700)
+  else if(sensorCState < 700)
   {
     digitalWrite(6, HIGH);
     delay(delay2);
     digitalWrite(6, LOW);
     delay(delay1);
   }
-  else if(analogRead(A2)<700)
+  else if(sensorDState < 700)
   {
     digitalWrite(7, HIGH);
     delay(delay2);
