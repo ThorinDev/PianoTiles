@@ -22,9 +22,10 @@ int sensorBState;
 int sensorCState;
 int sensorDState;
 
-int delay1 = 80;
-int delay2 = 75;
-int count = 0;
+int delay1;
+int delay2;
+int count;
+
 void setup() {
   pinMode(relayA, OUTPUT);
   pinMode(relayB, OUTPUT);
@@ -35,6 +36,10 @@ void setup() {
   digitalWrite(relayB, LOW); 
   digitalWrite(relayC, LOW); 
   digitalWrite(relayD, LOW);
+
+  delay1 = 80;
+  delay2 = 75;
+  count = 0;
 }
 
 void loop() {
@@ -44,10 +49,9 @@ void loop() {
   sensorCState = analogRead(sensorC);
   sensorDState = analogRead(sensorD);
 
-  
   count = count +1;
-  if(count==25)
-  {
+  
+  if(count==25) {
     delay1 = 70;
     delay2 = 75;
   }
