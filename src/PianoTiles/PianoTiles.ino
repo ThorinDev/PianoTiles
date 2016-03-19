@@ -16,10 +16,15 @@ const int sensorB = A4;
 const int sensorC = A3;
 const int sensorD = A2;
 
+// Light Sensors States
+int sensorAState;
+int sensorBState;
+int sensorCState;
+int sensorDState;
+
 int delay1 = 80;
 int delay2 = 75;
 int count = 0;
-
 void setup() {
   pinMode(relayA, OUTPUT);
   pinMode(relayB, OUTPUT);
@@ -33,6 +38,13 @@ void setup() {
 }
 
 void loop() {
+
+  sensorAState = analogRead(sensorA);
+  sensorBState = analogRead(sensorB);
+  sensorCState = analogRead(sensorC);
+  sensorDState = analogRead(sensorD);
+
+  
   count = count +1;
   if(count==25)
   {
